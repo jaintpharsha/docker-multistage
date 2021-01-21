@@ -1,4 +1,4 @@
-FROM node:10 AS my-build
+FROM node:10 AS ui-build
 WORKDIR /usr/src/app
 COPY WebApp/ ./WebApp/
 RUN cd WebApp && npm install @angular/cli && npm install && npm run build
